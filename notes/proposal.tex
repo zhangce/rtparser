@@ -1,1 +1,40 @@
-documentclass
+\documentclass{article}
+\usepackage{acl2012}
+
+\title{Real-time Syntactic Parsing over Text Streams\\(Project Proposal)}
+
+\author{Ce Zhang\\University of Wisconsin-Madison\\czhang@cs.wisc.edu}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\section{Related Work}
+
+\newcite{chomsky:1959:ic} shows that every context-free grammar (CFG) can be
+transformed into an equivalent one in Chomsky normal form (CNF).
+
+\newcite{valiant:1975:jcss} proves that parsing CFG into CNF is at
+least as fast as Boolean matrix multiplication, i.e., $O(n^{2.81})$.
+
+\newcite{yi:2011:iwpt} speeds up CYP parsing using the parallel
+infrastructure provided by modern GPUs.
+
+Some other researchers, e.g., \newcite{ciressan:2001:icfpga}, use
+hardware-based approaches, which are orthogonal to this work. 
+
+\newcite{jaffar:2008:aaai} optimizes the memoization of dynamic
+programming, and \newcite{chowdhury:soda:2006} optimizes the caching
+behavior of dynamic programming.
+
+\cite{hong:2009:tcbb} reuses the dynamic programming results to
+speed-up processing a new execution.
+
+\section{Plan}
+
+
+\bibliographystyle{acl2012}
+\bibliography{rtparser}
+
+\end{document}
